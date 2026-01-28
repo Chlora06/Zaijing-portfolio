@@ -89,6 +89,11 @@
 .project-image img{
   width: 95%;
 }
+.left2{
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
 
 @media (min-width: 769px) and (max-width: 1024px){
   .home-container{

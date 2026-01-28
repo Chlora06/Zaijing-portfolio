@@ -20,6 +20,24 @@
   align-items: center;
   justify-items: center;
 }
+.lab{
+  background-color: #1b789d;
+  color: #ffffff;
+}
+#LabImage{
+  border-radius: 20px;
+}
+.Safeway{
+  background-color: #FF6F59;
+  color: #f5f5f5;
+}
+
+.spacing-left {
+  margin-left: 16px;
+}
+#SafewayImage{
+  border-radius: 20px;
+}
 .Wander{
   background-color: #0151AE;
   color: #f5f5f5;
@@ -27,6 +45,7 @@
 #WanderImage{
   border-radius: 20px;
 }
+
 .Green{
   background-color: #2F5233;
   color: #f5f5f5;

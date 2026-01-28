@@ -1,7 +1,7 @@
 // Typing animation function
 function startTypingAnimation() {
-  const text = "A UX designer";
-  const speed = 250; // Typing speed in milliseconds
+  const text = "A UX designer and A UX researcher."; // Text to type
+  const speed = 100; // Typing speed in milliseconds
   const pauseDuration = 2000; // Pause duration after typing completes in milliseconds
   const typingElement = document.getElementById("typing-text");
 
