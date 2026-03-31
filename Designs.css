@@ -20,6 +20,14 @@
   align-items: center;
   justify-items: center;
 }
+.hackathon{
+  background-color: #0151AE;
+  color: #f5f5f5;
+}
+.MatchDog{
+  background-color: #FFC1C4;
+  color: #000000;
+}
 .lab{
   background-color: #1b789d;
   color: #ffffff;
