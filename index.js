@@ -29,18 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start typing animation
   startTypingAnimation();
 
-  // Initialize page with Home content
-  loadPage("Home", false);
-  setActiveLink("Home");
+  // Initialize page with Projects content
+  loadPage("Designs", false);
+  setActiveLink("Designs");
 
   // Set up event listeners for navigation links
-  const navLinks = document.querySelectorAll(".nav-bar a");
+  const navLinks = document.querySelectorAll(".nav-bar a[data-page]");
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      const pageName =
-        this.getAttribute("onclick").match(/loadPage\('(.*)'\)/)[1];
-
+      const pageName = this.dataset.page;
       loadPage(pageName, true);
       setActiveLink(pageName);
     });
@@ -65,22 +63,27 @@ function loadPage(pageName, scrollToNav = false) {
         loadBlogPosts();
       }
 
-      // Scroll to position only if user clicked navigation link
+      // If the page loaded is Designs, init project filter tabs
+      if (pageName === "Designs") {
+        initProjectFilter();
+      }
+
+      // Scroll to content area only if user clicked navigation link
       if (scrollToNav) {
         setTimeout(() => {
-          const introElement = document.querySelector(".Intro");
+          const mainContent = document.getElementById("main-content");
           const navElement = document.querySelector(".nav");
 
-          if (introElement && navElement) {
+          if (mainContent && navElement) {
             const scrollToPosition =
-              introElement.offsetHeight - navElement.offsetHeight;
+              mainContent.offsetTop - navElement.offsetHeight;
 
             window.scrollTo({
               top: scrollToPosition,
               behavior: "smooth",
             });
           }
-        }, 100); // Delay to ensure content is fully loaded
+        }, 100);
       }
     })
     .catch((error) => {
@@ -93,17 +96,34 @@ function loadPage(pageName, scrollToNav = false) {
 
 // Function to set the active link
 function setActiveLink(pageName) {
-  const navLinks = document.querySelectorAll(".nav-bar a");
-
-  navLinks.forEach((link) => {
-    if (link.getAttribute("onclick").includes(`loadPage('${pageName}')`)) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
+  document.querySelectorAll(".nav-bar a[data-page]").forEach((link) => {
+    link.classList.toggle("active", link.dataset.page === pageName);
   });
 }
 
+
+// Project filter tabs
+function initProjectFilter() {
+  const tabs = document.querySelectorAll(".tab-btn");
+  const cards = document.querySelectorAll(".project-card");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const filter = tab.dataset.filter;
+      cards.forEach((card) => {
+        const categories = card.dataset.category || "";
+        if (filter === "all" || categories.includes(filter)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+}
 
 //Blog.js
 // Function to load blog posts

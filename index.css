@@ -14,13 +14,6 @@ body{
 #main-content{
   margin-top: 10vh;
 }
-/* Here is header */
-#logo-top {
-  margin: 20px;
-  width: 90px;
-  height: auto;
-  transition: width 0.3s ease-in-out;
-}
 .container{
   margin-left: var(--container-margin);
   margin-right: var(--container-margin);
@@ -71,57 +64,59 @@ body{
 }
 
 /* Here is nav bar */
-.nav{
+.nav {
   width: 100%;
   background-color: #333;
-  text-align: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
 }
-.nav-content{
+.nav-content {
   max-width: 80vw;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+#logo-nav {
+  width: 60px;
+  height: auto;
+  flex-shrink: 0;
 }
 .nav-bar {
-  max-width: 60%;
-  margin: 0 auto;
-  padding: 1rem 0;
+  padding: 0;
 }
-.nav-bar ul{
+.nav-bar ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  gap: 2.5rem;
 }
-.nav-bar li{
+.nav-bar li {
   display: inline-block;
 }
 .nav-bar a {
   text-decoration: none;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #f5f5f5;
-  transition: color 1s ease, border-bottom 1s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 2px;
 }
-.nav-bar a:hover{
+.nav-bar a:hover {
   color: #f5f5f5;
   border-bottom: 1px solid #f5f5f5;
 }
-.nav-bar a.active{
+.nav-bar a.active {
   color: #0BD2FF;
   border-bottom: 1px solid #0BD2FF;
 }
 .nav-bar a:active, .nav-bar a:focus {
   color: #0BD2FF;
   border-bottom: 1px solid #0BD2FF;
-}
-.Top-line{
-  width: 100%;
-}
-.Bottom-line{
-  width: 80%;  
 }
 
 /* Here is footer */
@@ -185,18 +180,16 @@ body{
   .font p{
     font-size: 1.25rem;
   }
-  .nav a{
-    font-size: 1.25rem;
+  .nav-bar a {
+    font-size: 1rem;
   }
 }
 @media (max-width:768px){
   :root {
     --container-margin: 5%;
   }
-  #logo-top {
-    margin: 20px;
-    width: 50px;
-    height: auto;
+  #logo-nav {
+    width: 40px;
   }
   .Intro{
     flex-direction: column;
@@ -216,15 +209,11 @@ body{
   .font p{
     font-size: 1.25rem;
   }
-  .nav a{
-    font-size: 1rem;
+  .nav-bar ul {
+    gap: 1.2rem;
   }
-  .nav-bar{
-    max-width: 100%;
-    padding: 0.5rem 0;
-  }
-  .Bottom-line{
-    width: 100%;  
+  .nav-bar a {
+    font-size: 0.9rem;
   }
   #main-content{
     margin-top: 5vh;
