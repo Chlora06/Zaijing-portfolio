@@ -809,4 +809,15 @@ a { color: inherit; }
     margin-top: 2px;
   }
   .proj-row__arrow { display: none; }   /* phone: drop the arrow, keep just the year */
+
+  /* goals / research-question rows: stack the label over its text (no squeezed side column) */
+  .goals__row { grid-template-columns: 1fr; gap: 4px; padding: 16px 0; }
+  .goals__name { font-size: 16px; }
+  .goals__text { font-size: 16px; }
+
+  /* survey stat rows: stack the number over its label */
+  .survey-stats__row { grid-template-columns: 1fr; gap: 4px; }
+
+  /* research-question rows already stack; keep text readable */
+  .rq__text { font-size: 18px; }
 }
