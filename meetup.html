@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Usability Testing for the Meetup Website — Zaijing Liu</title>
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Zaijing Liu</span>
+        <span class="brand__sep">/</span>
+        <span class="brand__role">UX Research</span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home<span class="bar"></span></a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page">
+
+    <!-- Detail header -->
+    <section class="detail-header">
+      <a class="back" href="wearables.html"><span>←</span> Previous Project</a>
+      <div class="eyebrow">02 / Social · Web · 2026</div>
+      <h1>Usability Testing for the Meetup Website</h1>
+      <p class="tagline">Evaluating how people discover, join, and follow through on events on the Meetup website.</p>
+      <div class="facts">
+        <div><div class="k">Role</div><div class="v">UX Researcher</div></div>
+        <div><div class="k">Timeline</div><div class="v">Apr 2026 – May 2026</div></div>
+        <div><div class="k">Domain</div><div class="v">Social · Web</div></div>
+      </div>
+    </section>
+
+    <!-- Cover -->
+    <div class="shot cover" style="display:flex;align-items:center;justify-content:center;background:#fff;">
+      <img src="images/mu-logo.png" alt="Meetup" style="max-width:min(72%,404px);width:auto;height:auto;"
+           onerror="this.replaceWith(document.createTextNode('[ drop images/mu-logo.png ]'))">
+    </div>
+
+    <!-- Overview -->
+    <div class="subhead"><span class="subhead__idx">01</span><h3>Overview</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">This project evaluated the usability of Meetup through summative usability testing. We observed six participants as they completed five core tasks related to event discovery, account creation, event participation, and group management.</p>
+        <p class="prose">By combining task performance metrics, behavioral observations, user feedback, and SUS scores, we identified key usability issues and developed recommendations to improve the overall experience.</p>
+      </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <div class="subhead"><span class="subhead__idx">02</span><h3>Problem Statement</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">Meetup helps users discover events and communities based on shared interests, but key actions such as finding events, joining groups, and managing memberships involve multiple steps and interaction patterns. This study aimed to evaluate how effectively users could complete these core tasks and identify usability barriers that affected clarity, efficiency, and overall ease of use.</p>
+      </div>
+    </section>
+
+    <!-- Usability Testing -->
+    <div class="subhead"><span class="subhead__idx">03</span><h3>Usability Testing</h3></div>
+
+    <section class="sec">
+      <div class="sec__label">Research Goals &amp; Questions</div>
+      <div class="sec__body">
+        <p class="prose">We conducted summative usability testing to evaluate how successfully and efficiently users could complete Meetup's core event and group-related tasks.</p>
+        <div class="goals">
+          <div class="goals__row"><span class="goals__name">Effectiveness</span><span class="goals__text">Evaluate whether users can successfully complete key tasks such as finding events, joining events, and managing groups.</span></div>
+          <div class="goals__row"><span class="goals__name">Efficiency</span><span class="goals__text">Identify friction, unnecessary steps, errors, and hesitation throughout key task flows.</span></div>
+        </div>
+        <p class="prose" style="margin-top:30px;">Two research questions guided the study:</p>
+        <div class="rqs">
+          <div class="rq"><div class="rq__label">RQ1</div><p class="rq__text">How effectively and efficiently can users discover and join relevant events on Meetup?</p></div>
+          <div class="rq"><div class="rq__label">RQ2</div><p class="rq__text">What usability barriers do users encounter when signing up and managing event or group participation?</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Methodology</div>
+      <div class="sec__body">
+        <p class="prose">We conducted summative usability testing with six participants across five core Meetup tasks. During each task, we recorded task performance and observed user behavior, followed by a post-test interview and the System Usability Scale (SUS) to capture participants' overall experience.</p>
+        <div class="eyebrow" style="margin-top:38px;">Metrics</div>
+        <div class="meth__grid">
+          <div class="meth__col meth__col--q1">
+            <h4>Quantitative</h4>
+            <div class="set">
+              <p><em>Task Completion Time:</em> Time required to complete each task.</p>
+              <p><em>Completion Success:</em> Whether participants successfully completed each task.</p>
+              <p><em>Errors:</em> Number of errors made during task completion.</p>
+              <p><em>SUS Score:</em> Overall perceived usability measured using the System Usability Scale.</p>
+            </div>
+          </div>
+          <div class="meth__col meth__col--q2">
+            <h4>Qualitative</h4>
+            <div class="set">
+              <p><em>Behavioral:</em> Navigation paths, actions, hesitation, confusion, and other observed behaviors during each task.</p>
+              <p><em>Subjective:</em> Post-test interview responses, participant feedback, and direct quotes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Tasks</div>
+      <div class="sec__body">
+        <div class="flows">
+          <div class="flow"><span class="flow__n">01</span><div><div class="flow__title">Find a tennis event happening this week near you</div><p class="flow__scenario">You’re free this weekend and want to find a tennis event around you.</p></div></div>
+          <div class="flow"><span class="flow__n">02</span><div><div class="flow__title">Sign in or sign up for an account</div><p class="flow__scenario">You find many of the events on the website interesting, so you decide to sign up for (or log in to) an account.</p></div></div>
+          <div class="flow"><span class="flow__n">03</span><div><div class="flow__title">Join a tennis event this Saturday</div><p class="flow__scenario">After browsing for a while, you want to find and join a tennis event near you on Saturday to see if you enjoy the sport.</p></div></div>
+          <div class="flow"><span class="flow__n">04</span><div><div class="flow__title">Join a tennis group</div><p class="flow__scenario">After deciding to attend this event, you’d like to join 1 tennis group so you can keep track of their events regularly.</p></div></div>
+          <div class="flow"><span class="flow__n">05</span><div><div class="flow__title">Leave the tennis group</div><p class="flow__scenario">After trying a few times, you decide tennis isn’t for you. Now, you’d like to leave the tennis group.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Participants</div>
+      <div class="sec__body">
+        <div class="participants">
+          <div><div class="participants__num">6</div><div class="participants__label">participants</div></div>
+          <p class="participants__desc">We recruited 6 participants with varying levels of familiarity with Meetup and similar event platforms. Most participants had limited prior experience with Meetup, allowing us to observe how both new and returning users understood the platform’s core features.</p>
+        </div>
+        <div class="statbar">
+          <div class="statbar__cell"><div class="statbar__v">2/6</div><div class="statbar__k">Used Meetup before</div></div>
+          <div class="statbar__cell"><div class="statbar__v">5/6</div><div class="statbar__k">Ages 25–34</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Usability Testing Process</div>
+      <div class="sec__body">
+        <div class="process">
+          <div class="process__step"><span class="process__n">01</span><span class="process__phase">Introduction</span><span class="process__detail">Welcomed participants, introduced the purpose of the study, and explained how the session would be conducted.</span></div>
+          <div class="process__step"><span class="process__n">02</span><span class="process__phase">Pre-Test Questionnaire</span><span class="process__detail">Participants answered brief background questions about their familiarity with Meetup, experience with similar event platforms, and event-searching habits.</span></div>
+          <div class="process__step"><span class="process__n">03</span><span class="process__phase">Task Briefing</span><span class="process__detail">Introduced each task scenario and provided participants with the context needed to complete the task.</span></div>
+          <div class="process__step"><span class="process__n">04</span><span class="process__phase">Task Execution</span><span class="process__detail">Participants completed five scenario-based tasks while we recorded task success, completion time, errors, navigation paths, and observed behavior.</span></div>
+          <div class="process__step"><span class="process__n">05</span><span class="process__phase">System Usability Scale (SUS)</span><span class="process__detail">After completing all tasks, participants completed the SUS questionnaire to rate their overall perception of Meetup’s usability.</span></div>
+          <div class="process__step"><span class="process__n">06</span><span class="process__phase">Post-Test Interview</span><span class="process__detail">We conducted a short interview to gather additional feedback about participants’ overall experience, frustrations, and points of confusion.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Usability Findings</div>
+      <div class="sec__body">
+        <div class="tasks">
+          <div class="task">
+            <div class="task__title">Task 1 — Find an Event</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">100%</div><div class="metric__k">Task success</div></div>
+            </div>
+            <p class="task__text">All participants successfully found a nearby tennis event with no errors. Most relied directly on the search bar, suggesting that basic event discovery was relatively intuitive. Some confusion remained around how search results were labeled and presented.</p>
+          </div>
+          <div class="task">
+            <div class="task__title">Task 2 — Sign Up / Sign In</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">100%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__v">33–255s</div><div class="metric__k">Completion time range</div></div>
+            </div>
+            <p class="task__text">Although all participants completed the task, four of six experienced confusion around the unexpected membership or payment step. The unclear “Skip” option and lack of completion feedback made the sign-up flow unnecessarily difficult.</p>
+          </div>
+          <div class="task">
+            <div class="task__title">Task 3 — Join an Event</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">83%</div><div class="metric__k">Task success</div></div>
+            </div>
+            <p class="task__text">Participants struggled with date filtering and unexpected membership prompts. Some manually scanned search results instead of using the date filter, while one participant incorrectly believed the task was complete after reaching the membership page.</p>
+          </div>
+          <div class="task">
+            <div class="task__title">Task 4 — Join a Group</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">83%</div><div class="metric__k">Task success</div></div>
+            </div>
+            <p class="task__text">Participants frequently confused “events” with “groups” and were unsure whether joining an event also meant joining its group. This terminology mismatch led to inefficient navigation and one task failure.</p>
+          </div>
+          <div class="task">
+            <div class="task__title">Task 5 — Leave a Group</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">83%</div><div class="metric__k">Task success</div></div>
+            </div>
+            <p class="task__text">Most participants eventually left the group, but the action was difficult to discover. The “Manage Membership” label did not clearly communicate where users could leave a group, and participants followed inconsistent paths to complete the task.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">SUS Results</div>
+      <div class="sec__body">
+        <div class="sus">
+          <div>
+            <div class="sus__score">47.92 / 100</div>
+            <div class="sus__note">Below the 68 SUS benchmark</div>
+          </div>
+          <div class="sus__keys">
+            <span class="sus__key">Confusing terminology</span>
+            <span class="sus__key">Interrupted task flows</span>
+            <span class="sus__key">Unclear system structure</span>
+          </div>
+        </div>
+        <p class="prose">The average SUS score was 47.92, below the benchmark of 68, indicating below-average perceived usability. Post-test interviews reinforced this result, with participants repeatedly mentioning confusing terminology, unclear system structure, and interruptions caused by membership prompts.</p>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <div class="subhead"><span class="subhead__idx">04</span><h3>Recommendations</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose prose--lead">Based on the usability testing, SUS results, and post-test feedback, we identified three key opportunities to improve clarity, transparency, and efficiency across the Meetup experience.</p>
+        <div class="recs">
+          <div class="rec">
+            <div class="rec__head"><span class="rec__n">01</span><div class="rec__name">Reduce Unexpected Membership Prompts</div></div>
+            <p class="rec__lead">Membership and payment prompts repeatedly interrupted users during sign-up and event participation, creating confusion about whether payment was required.</p>
+            <div class="rec__set">
+              <p>Make “Skip” and “Continue with free plan” more visible.</p>
+              <p>Avoid presenting membership prompts in the middle of critical task flows.</p>
+              <p>Present optional membership offers after users complete their primary task.</p>
+            </div>
+            <figure>
+              <div class="shot figbox"><img src="images/mu-membership.png" style="height:auto;" alt="Redesign: an unexpected membership/payment prompt during sign-up"></div>
+              <figcaption>Redesign — membership prompt</figcaption>
+            </figure>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><span class="rec__n">02</span><div class="rec__name">Clarify Groups, Events, and Membership</div></div>
+            <p class="rec__lead">Participants frequently struggled to understand the relationship between events, groups, and membership, making group management less intuitive.</p>
+            <div class="rec__set">
+              <p>Clearly differentiate “Join an Event” and “Join a Group.”</p>
+              <p>Use consistent terminology for groups, events, and memberships.</p>
+              <p>Add a clear “Join This Group” action.</p>
+              <p>Make “Leave Group” a direct and visible action instead of hiding it under “Manage Membership.”</p>
+            </div>
+            <figure>
+              <div class="shot figbox"><img src="images/mu-terminology.png" style="height:auto;" alt="Redesign: clearer group, event, and membership terminology"></div>
+              <figcaption>Redesign — group and event actions</figcaption>
+            </figure>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><span class="rec__n">03</span><div class="rec__name">Improve Time Filter Discoverability</div></div>
+            <p class="rec__lead">Participants often overlooked the time filter and manually scanned event results when searching for events on a specific day.</p>
+            <div class="rec__set">
+              <p>Make the time/date filter more visible within search results.</p>
+              <p>Make selecting a specific day easier and more direct.</p>
+              <p>Provide lightweight guidance for important search and filtering features.</p>
+            </div>
+            <figure>
+              <div class="shot figbox"><img src="images/mu-timefilter.png" style="height:auto;" alt="Redesign: a more visible time/date filter in search"></div>
+              <figcaption>Redesign — date filter</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <div class="subhead"><span class="subhead__idx">05</span><h3>Conclusion</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">Overall, the study showed that users could complete most core tasks, but often with unnecessary confusion and friction. Unexpected membership prompts, unclear terminology, and difficult-to-find filters affected users’ confidence and efficiency. These findings highlight opportunities to create a more transparent, intuitive, and predictable Meetup experience.</p>
+      </div>
+    </section>
+
+    <!-- Next project -->
+    <a class="cta-band" href="safeway.html">
+      <div>
+        <div class="eyebrow">Next Project — 03</div>
+        <div class="cta-band__title">Redesigning the Safeway Mobile App</div>
+      </div>
+      <span class="cta-band__arrow">→</span>
+    </a>
+
+  </main>
+
+</body>
+</html>

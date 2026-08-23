@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Redesigning the Safeway Mobile App — Zaijing Liu</title>
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Zaijing Liu</span>
+        <span class="brand__sep">/</span>
+        <span class="brand__role">UX Research</span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home<span class="bar"></span></a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section nav (two-phase project) -->
+  <div class="toc no-print">
+    <div class="toc__inner">
+      <a href="#phase-research">Phase 1 — Evaluation &amp; Insights</a>
+      <a href="#phase-design">Phase 2 — Redesign &amp; Validation</a>
+    </div>
+  </div>
+
+  <main class="wrap page">
+
+    <!-- Detail header -->
+    <section class="detail-header">
+      <a class="back" href="meetup.html"><span>←</span> Previous Project</a>
+      <div class="eyebrow">03 / Grocery · Mobile · 2025</div>
+      <h1>Redesigning the Safeway Mobile App</h1>
+      <p class="tagline">A two-phase project: Phase 1 evaluated the existing app and synthesized insights; Phase 2 turned those recommendations into a redesign, re-tested with users.</p>
+      <div class="facts">
+        <div><div class="k">Role</div><div class="v">UX Researcher</div></div>
+        <div><div class="k">Timeline</div><div class="v">Sep 2025 – Dec 2025</div></div>
+        <div><div class="k">Domain</div><div class="v">Grocery · Mobile</div></div>
+      </div>
+    </section>
+
+    <!-- Cover -->
+    <div class="shot cover"><img src="images/sw-cover.png" alt="Safeway"></div>
+
+    <!-- ============ PHASE 1 ============ -->
+    <div class="phase" id="phase-research">
+      <span class="phase__tag">Phase 01</span>
+      <h2>Evaluation &amp; Insights</h2>
+    </div>
+
+    <!-- Overview -->
+    <div class="subhead"><span class="subhead__idx">01</span><h3>Overview</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">This project focused on evaluating and redesigning the Safeway mobile app to improve key grocery shopping experiences. We began with a heuristic evaluation and competitive analysis to identify potential usability issues and understand how similar grocery apps support common tasks.</p>
+        <p class="prose">We then conducted usability testing to examine how users interacted with core features, including coupons, the shopping cart, and the member card. Findings from the research informed our redesign and final design recommendations.</p>
+      </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <div class="subhead"><span class="subhead__idx">02</span><h3>Problem Statement</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">The Safeway app supports a wide range of grocery shopping tasks, but its complex interface can make common actions less intuitive and efficient. This project aimed to identify usability barriers within key shopping flows and explore opportunities to create a clearer and more seamless experience.</p>
+      </div>
+    </section>
+
+    <!-- Research & Evaluation -->
+    <div class="subhead"><span class="subhead__idx">03</span><h3>Research &amp; Evaluation</h3></div>
+
+    <section class="sec">
+      <div class="sec__label">Heuristic Evaluation</div>
+      <div class="sec__body">
+        <p class="tags__summary">We conducted a heuristic evaluation to identify potential usability issues across key Safeway shopping flows. Three team members walked through the app and evaluated the interface using the guidelines below, then prioritized the identified issues based on their level of importance. These findings helped us determine which areas required further investigation during usability testing.</p>
+        <div class="tags__set">
+          <span class="tag">8 Golden Rules of Interface Design</span>
+          <span class="tag">Fitts's Law</span>
+          <span class="tag">Gestalt Principles</span>
+          <span class="tag">Hick-Hyman's Law</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Heuristic Findings</div>
+      <div class="sec__body">
+        <p class="prose">Seven prioritized findings, each documented with annotated screens, the guidelines they violate, and a corresponding recommendation.</p>
+        <div class="hf-list">
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">01</span>
+              <span class="hf__prio hf__prio--1">Priority 1</span>
+              <span class="hf__title">Rewards QR code is buried at checkout</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig1.png" style="height:auto;" alt="Figure 1: Rewards QR code buried at checkout"></div>
+              <figcaption>Figure 1</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>The rewards QR code to apply coupons for in-person purchases (Figure 1) is difficult to find. Users must dig into the app at checkout to ensure they receive their discounts and points. Couponing and rewards systems are a primary function of many grocery apps.</p>
+                <div class="set">
+                  <p><em>Violation of Fitts’ Law:</em> The UI element is small and placed at the bottom of the screen. Scanning rewards should be larger and quicker to access.</p>
+                  <p><em>Strive for Consistency:</em> The app does not demonstrate consistency in making one of its primary features prominent, unlike its competitors.</p>
+                  <p><em>Figure &amp; Ground:</em> The barcode is visually minimized at the bottom, so it does not appear to be the main object of attention.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Make the rewards QR barcode more visually prominent so users can easily recognize and identify the feature.</p>
+                  <p>Elevate its placement in the menu hierarchy to ensure quick access at checkout, reducing frustration, time on task, and unnecessary clicks.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">02</span>
+              <span class="hf__prio hf__prio--1">Priority 1</span>
+              <span class="hf__title">Two QR codes in different places for the same function</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig2.png" style="height:auto;" alt="Figure 2: Two QR codes in different places for the same function"></div>
+              <figcaption>Figure 2</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>This app displays two QR codes in multiple locations (Deal page and Wallet) but serves the same function, which is to apply coupons. The visual treatment and the contexts differ, which may confuse users into thinking they are separate features. (Figure 2)</p>
+                <div class="set">
+                  <p><em>Consistency:</em> This design violates the principle of consistency by displaying the member QR code on different pages with different visuals and contexts. Although both serve the same function, the inconsistent display makes users think they are different features, leading to confusion.</p>
+                  <p><em>Reduce Short-Term Memory Load:</em> Users must remember at least one path to access this QR code. Instead of visually surfacing a direct entry point, this design increases memory demand. During checkout, users need a fast and stress-free way to access the QR code.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Move the QR code from the Wallet to the Member page, so users can access it with fewer clicks and without switching between multiple pages.</p>
+                  <p>Unify the visual design and context of the QR code across the app to ensure users clearly understand it is the same function.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">03</span>
+              <span class="hf__prio hf__prio--1">Priority 1</span>
+              <span class="hf__title">Clipping a coupon gives no confirmation or next step</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig3.png" style="height:auto;" alt="Figure 3: Clipping a coupon gives no confirmation or next step"></div>
+              <figcaption>Figure 3</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>When users clip coupons, the process creates uncertainty and confusion, disrupting their shopping experience (Figure 3). The system does not provide clear feedback to confirm that a coupon has been successfully added.</p>
+                <div class="set">
+                  <p><em>Offer Informative Feedback:</em> The interface fails to notify users when their action is completed, leaving them unsure if the coupon was clipped.</p>
+                  <p><em>Recognition Rather than Recall:</em> Users must remember how many coupons they had clipped before in order to notice the counter update. Without explicit confirmation, they cannot easily recognize that the action was successful.</p>
+                  <p><em>Design Dialogs to Yield Closure:</em> Clipping a coupon is only the first step in obtaining discounts, yet the system provides no guidance or sense of completion to help users understand what comes next.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Provide clear, immediate feedback when users tap “Clip Deal” by displaying a confirmation state.</p>
+                  <p>Surface a contextual next step to guide users through the couponing process.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">04</span>
+              <span class="hf__prio hf__prio--1">Priority 1</span>
+              <span class="hf__title">Cart mixes à la carte items with meal plans</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig4.png" style="height:auto;" alt="Figure 4: Cart mixes à la carte items with meal plans"></div>
+              <figcaption>Figure 4</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>Identifying items in the shopping cart increases cognitive load and frustration for users when they add both à la carte items and meal plans (Figure 4).</p>
+                <div class="set">
+                  <p><em>Reduce Short-Term Memory Load:</em> The design forces users to hold in memory which ingredients belong to which meal, instead of showing it visually. This is especially problematic when some plans include 8+ ingredients, exceeding the limits of short-term memory.</p>
+                  <p><em>Gestalt Principle of Proximity:</em> The cart groups items by type (grains, fruits &amp; veggies, meats), which misrepresents the mapping users expect. Based on their previous actions, users anticipate seeing items grouped by à la carte selections or by meal plan.</p>
+                  <p><em>Error Prevention &amp; Flexibility and Efficiency of Use:</em> Users may accidentally remove the wrong item from a meal plan or à la carte selection due to the confusing organization. There is also no efficient way to manage meal plans within the cart; users must backtrack to identify items manually or restart the entire process.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Introduce a tabbed view that allows users to toggle between à la carte items and meal plans. This layered organization preserves the existing grouping by type while adding a higher-level distinction that aligns with user expectations.</p>
+                  <p>By surfacing meal plans as clear groupings, users can more easily manage, review, or remove items without unnecessary cognitive load.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">05</span>
+              <span class="hf__prio hf__prio--2">Priority 2</span>
+              <span class="hf__title">Quantity control lacks affordance</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig5.png" style="height:auto;" alt="Figure 5: Quantity control lacks affordance"></div>
+              <figcaption>Figure 5</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>The quantity adjustment control (Figure 5) is represented only by a numeral, which lacks clear affordance.</p>
+                <div class="set">
+                  <p><em>8 Golden Rules of Interface Design:</em> Strive for Consistency is violated by failing to follow standard UI patterns for quantity adjustment. Prevent Errors is also violated, as the remove button is placed very close to the quantity control, increasing the risk of accidental item deletion.</p>
+                  <p><em>Gestalt Principle of Proximity:</em> The placement of the remove button directly beneath the quantity control visually groups them, implying a functional relationship that does not exist and potentially misleading users.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Replace the standalone numeral with clear quantity adjustment controls, such as + / – buttons, to align with established interaction patterns and affordances.</p>
+                  <p>Integrate an X icon for item removal or a checkbox to support multi-item deletion. This reduces ambiguity, prevents errors, and creates a more intuitive and efficient cart management experience.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">06</span>
+              <span class="hf__prio hf__prio--2">Priority 2</span>
+              <span class="hf__title">Store address cannot be changed from the cart</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig6.png" style="height:auto;" alt="Figure 6: Store address cannot be changed from the cart"></div>
+              <figcaption>Figure 6</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>Users cannot change the store address directly from the shopping cart. Clicking the address redirects them to the home screen, forcing them to adjust the address there and then navigate back to the checkout (Figure 6). This workflow inefficiency violates several of Nielsen’s heuristics and one of the golden rules.</p>
+                <div class="set">
+                  <p><em>User Control &amp; Freedom:</em> Users are unable to change the store address directly in the cart view, so they are forced to leave the checkout flow, adding unnecessary steps.</p>
+                  <p><em>Flexibility &amp; Efficiency of Use:</em> Changing store location is a common action in a shopping experience. Instead of having the functionality accessible at any moment, users have to backtrack to proceed with the action.</p>
+                  <p><em>Cater to Universal Usability:</em> The system fails to design for a wide range of users. Shoppers who are new or under time constraints will become frustrated and possibly abandon their shopping goal at checkout.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Enable users to update their store location directly within key points of the checkout flow. Providing in-context address controls ensures a seamless shopping experience, reduces unnecessary navigation, and supports task completion without disruptions.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="hf">
+            <summary class="hf__head">
+              <span class="hf__n">07</span>
+              <span class="hf__prio hf__prio--3">Priority 3</span>
+              <span class="hf__title">Health and Pharmacy icons are redundant</span>
+              <span class="hf__sign"><span class="plus">+</span><span class="minus">−</span></span>
+            </summary>
+            <figure>
+              <div class="shot figbox"><img src="images/sw-fig7.png" style="height:auto;" alt="Figure 7: Health and Pharmacy icons are redundant"></div>
+              <figcaption>Figure 7</figcaption>
+            </figure>
+            <div class="hf__grid">
+              <div class="hf__col hf__col--issue">
+                <h4>Assessed Issue &amp; Guidelines / Principles Review</h4>
+                <p>The Health and Pharmacy icons (Figure 7) are redundant, as they lead users to the same destination, differing only by a tab.</p>
+                <div class="set">
+                  <p><em>Violation of Consistency &amp; Standards:</em> Users expect different functionalities from different icons. Having Health and Pharmacy direct to the same page creates confusion and breaks consistency.</p>
+                  <p><em>Aesthetic and Minimalist Design:</em> Redundant entry points increase complexity and add unnecessary clutter to the interface.</p>
+                  <p><em>Similarity:</em> Users naturally group elements they perceive as alike. Here, the icons break expectations by presenting visual differences that do not correspond to functional differences.</p>
+                </div>
+              </div>
+              <div class="hf__col hf__col--recs">
+                <h4>Recommendations</h4>
+                <div class="set">
+                  <p>Consolidate the functionality into a single icon and relabel it as Wellness, creating a unified entry point that clearly represents both pharmacy and health services.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Competitive Analysis</div>
+      <div class="sec__body">
+        <p class="prose">We compared Safeway with Whole Foods and Walmart to understand how similar grocery apps organize key shopping features and support common user tasks.</p>
+        <p class="prose">Whole Foods provides quick access to its in-store QR code through the Home screen, while Walmart uses clearer navigation and more structured product organization. In comparison, Safeway offers strong features such as digital coupons, meal planning, and shopping lists, but several key functions require more navigation or lack clear interaction feedback.</p>
+        <p class="prose">The comparison highlighted opportunities for Safeway to improve feature discoverability, navigation clarity, and interaction consistency.</p>
+      </div>
+    </section>
+
+    <!-- Usability Testing -->
+    <div class="subhead"><span class="subhead__idx">04</span><h3>Usability Testing</h3></div>
+
+    <section class="sec">
+      <div class="sec__label">Research Goals &amp; Questions</div>
+      <div class="sec__body">
+        <p class="prose">Based on our initial evaluation, we defined four usability goals to guide the study:</p>
+        <div class="goals">
+          <div class="goals__row"><span class="goals__name">Effectiveness</span><span class="goals__text">Can users successfully complete key tasks?</span></div>
+          <div class="goals__row"><span class="goals__name">Efficiency</span><span class="goals__text">Can users complete tasks quickly and with minimal friction?</span></div>
+          <div class="goals__row"><span class="goals__name">Ease of Use</span><span class="goals__text">Are important features intuitive and easy to find?</span></div>
+          <div class="goals__row"><span class="goals__name">Satisfaction</span><span class="goals__text">Where do users experience frustration or uncertainty?</span></div>
+        </div>
+        <p class="prose" style="margin-top:30px;">To investigate these goals, we focused on three research questions:</p>
+        <div class="rqs">
+          <div class="rq"><div class="rq__label">RQ1 — Coupons</div><p class="rq__text">How effectively can users find, clip, and apply coupons, then locate eligible items to add to their cart?</p></div>
+          <div class="rq"><div class="rq__label">RQ2 — Shopping Cart</div><p class="rq__text">What challenges do users encounter when managing individual items and meal-plan items in their cart?</p></div>
+          <div class="rq"><div class="rq__label">RQ3 — Member Card</div><p class="rq__text">How easily can users access their member card for in-store scanning, and how does the experience affect their overall satisfaction?</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Methodology</div>
+      <div class="sec__body">
+        <p class="prose">We conducted usability tests to further evaluate the Safeway app across three core experiences: applying a coupon, managing the shopping cart, and accessing the member card. Participants were asked to think aloud while they performed the tasks.</p>
+        <p class="prose">The following usability performance measures were utilized to focus on our key goals — effectiveness, efficiency, and ease of use. The team also collected qualitative data during the sessions to build a comprehensive understanding of each participant's experience with the app.</p>
+        <div class="eyebrow" style="margin-top:38px;">Metrics</div>
+        <div class="meth__grid">
+          <div class="meth__col meth__col--q1">
+            <h4>Quantitative</h4>
+            <div class="set">
+              <p><em>Task Completion Time:</em> Time the participant took to complete the task.</p>
+              <p><em>Completion Success:</em> Whether the participant successfully completed the task.</p>
+              <p><em>Error Rate:</em> Each tap or click the user made that was not directed toward the goal.</p>
+              <p><em>Number of Clicks:</em> Amount of clicks the participant made to complete the task.</p>
+            </div>
+          </div>
+          <div class="meth__col meth__col--q2">
+            <h4>Qualitative</h4>
+            <div class="set">
+              <p><em>Subjective:</em> Think-aloud feedback and verbal responses to the team’s perception-probe questions during and after each task.</p>
+              <p><em>Behavioral:</em> Facial expressions, body language, and other nonverbal cues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Tasks</div>
+      <div class="sec__body">
+        <div class="flows">
+          <div class="flow"><span class="flow__n">01</span><div><div class="flow__title">Clipping and applying coupons to eligible items</div><p class="flow__scenario">You downloaded the Safeway app to find good deals on groceries. Find any coupon you want to use and successfully apply it.</p></div></div>
+          <div class="flow"><span class="flow__n">02</span><div><div class="flow__title">Reviewing and adjusting the shopping cart</div><p class="flow__scenario">You’re shopping for groceries in the Safeway app and added 1 à la carte item and 2 meal plans (ribeye and seared strips). When reviewing your shopping cart you realize you’re over budget. Successfully remove 1 of the meal plans from your cart.</p></div></div>
+          <div class="flow"><span class="flow__n">03</span><div><div class="flow__title">Finding your member card</div><p class="flow__scenario">You went in person to do shopping at Safeway. You remembered you clipped a coupon and want to make sure you get your points and discounts. Find your member card.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Persona</div>
+      <div class="sec__body">
+        <p class="prose">Two personas grounded the study in the shoppers we were designing for.</p>
+        <div class="persona-stack">
+          <figure><div class="shot figbox"><img src="images/sw-persona1.png" style="height:auto;" alt="Persona 1 — Emily, 21, graduate design student"></div><figcaption>Persona 01 — Emily</figcaption></figure>
+          <figure><div class="shot figbox"><img src="images/sw-persona2.png" style="height:auto;" alt="Persona 2 — Kevin, 32, single father"></div><figcaption>Persona 02 — Kevin</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Participants</div>
+      <div class="sec__body">
+        <div class="participants">
+          <div><div class="participants__num">10</div><div class="participants__label">grocery app shoppers</div></div>
+          <p class="participants__desc">Ten participants with a mix of Safeway and comparable grocery app experience, recruited across a range of shopping habits and frequencies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Usability Testing Process</div>
+      <div class="sec__body">
+        <div class="process">
+          <div class="process__step"><span class="process__n">01</span><span class="process__phase">Introduction</span><span class="process__detail">Greeted participants, introduced the purpose of the study, and explained how the usability test would be conducted.</span></div>
+          <div class="process__step"><span class="process__n">02</span><span class="process__phase">Pre-Test Interview</span><span class="process__detail">Asked brief background questions about participants’ grocery shopping habits and their experience with Safeway or similar grocery apps.</span></div>
+          <div class="process__step"><span class="process__n">03</span><span class="process__phase">Task Briefing</span><span class="process__detail">Introduced the task scenarios and provided participants with the context needed to complete each task.</span></div>
+          <div class="process__step"><span class="process__n">04</span><span class="process__phase">Task Execution</span><span class="process__detail">Observed participants as they completed the tasks, asked follow-up questions when appropriate, and documented behaviors, difficulties, and points of confusion.</span></div>
+          <div class="process__step"><span class="process__n">05</span><span class="process__phase">Post-Task Questionnaire</span><span class="process__detail">After each task, participants rated the ease of use and their satisfaction with the experience.</span></div>
+          <div class="process__step"><span class="process__n">06</span><span class="process__phase">Semi-Structured Interview</span><span class="process__detail">Conducted a short one-on-one interview to understand participants’ frustrations, perceptions of useful features, and overall experience before concluding the session.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Survey</div>
+      <div class="sec__body">
+        <p class="prose">To complement our usability testing, we surveyed 25 Safeway users to better understand their shopping behaviors, feature usage, and common pain points. The survey reinforced the importance of coupons as a core part of the Safeway experience while highlighting recurring friction around search, coupon interactions, cart management, and feature discoverability.</p>
+        <div class="survey-stats">
+          <div class="survey-stats__row"><span class="survey-stats__stat">82%</span><span class="survey-stats__label">used the app to clip or redeem coupons</span></div>
+          <div class="survey-stats__row"><span class="survey-stats__stat">84%</span><span class="survey-stats__label">preferred search over browsing categories</span></div>
+          <div class="survey-stats__row"><span class="survey-stats__stat">65%</span><span class="survey-stats__label">reported frustration with item search</span></div>
+          <div class="survey-stats__row"><span class="survey-stats__stat">61%</span><span class="survey-stats__label">reported frustration with coupons or rewards</span></div>
+          <div class="survey-stats__row"><span class="survey-stats__stat">52%</span><span class="survey-stats__label">reported frustration with cart management</span></div>
+          <div class="survey-stats__row"><span class="survey-stats__stat">26%</span><span class="survey-stats__label">reported difficulty or frustration around member card access</span></div>
+        </div>
+        <div class="takeaway">
+          <div class="k">Key Takeaway</div>
+          <p>Users valued Safeway primarily for deals and coupons, but unclear feedback, repetitive interactions, and difficulty locating key features created friction across common shopping tasks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Usability Findings</div>
+      <div class="sec__body">
+        <div class="tasks">
+          <div class="task">
+            <div class="task__title">Task 1 — Coupon Flow</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">89%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__v">111s</div><div class="metric__k">Avg. completion time</div></div>
+              <div class="metric"><div class="metric__v">19</div><div class="metric__k">Avg. clicks</div></div>
+              <div class="metric"><div class="metric__v">4.4</div><div class="metric__k">Avg. errors</div></div>
+            </div>
+            <p class="task__text">Most participants completed the coupon task successfully, but the flow required too many steps and created uncertainty about what to do after clipping a deal.</p>
+          </div>
+          <div class="task">
+            <div class="task__title">Task 2 — Shopping Cart</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">55%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__v">150s</div><div class="metric__k">Avg. completion time</div></div>
+              <div class="metric"><div class="metric__v">24.3</div><div class="metric__k">Avg. clicks</div></div>
+              <div class="metric"><div class="metric__v">10.7</div><div class="metric__k">Avg. errors</div></div>
+            </div>
+            <p class="task__text">Shopping cart management created the most friction. Participants frequently backtracked, struggled to distinguish meal-plan items from individual items, and experienced cognitive overload when trying to remove specific products.</p>
+          </div>
+          <div class="task">
+            <div class="task__title">Task 3 — Member Card</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__v">100%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__v">33.4s</div><div class="metric__k">Avg. completion time</div></div>
+              <div class="metric"><div class="metric__v">4.3</div><div class="metric__k">Avg. clicks</div></div>
+              <div class="metric"><div class="metric__v">2.2</div><div class="metric__k">Avg. errors</div></div>
+            </div>
+            <p class="task__text">The member card was the easiest task, but several participants felt its location in the Wallet did not match their expectations and could be more discoverable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redesign Recommendations -->
+    <div class="subhead"><span class="subhead__idx">05</span><h3>Redesign Recommendations</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose prose--lead">Based on the usability evaluation and overall findings, we identified several opportunities to improve the Safeway app and reduce friction across key shopping tasks.</p>
+        <div class="recs">
+          <div class="rec">
+            <div class="rec__head"><div class="rec__name">Clipping &amp; Applying Coupons</div></div>
+            <div class="rec__set">
+              <p><em>Provide informative feedback: </em>Give users clear, immediate confirmation after they tap “Clip Deal,” such as a “Successfully Clipped” state.</p>
+              <p><em>Create a clearer next step: </em>After a coupon is clipped, change the button from “Clip Deal” to “Shop Deal” to communicate completion and guide users toward eligible products.</p>
+            </div>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><div class="rec__name">Shopping Cart</div></div>
+            <div class="rec__set">
+              <p><em>Improve affordance: </em>Replace the standalone quantity number with familiar + / – controls.</p>
+              <p><em>Make item removal easier: </em>Add a clear remove action, such as an X icon or multi-select option, to make cart management more efficient.</p>
+              <p><em>Keep users in control: </em>Allow users to change their selected store directly from the shopping cart to reduce unnecessary backtracking.</p>
+              <p><em>Improve system visibility: </em>Provide immediate feedback about product availability so users can make decisions earlier in the flow.</p>
+              <p><em>Separate meal plans from individual items: </em>Use clearer grouping or tabs to help users understand and manage nested meal-plan items.</p>
+            </div>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><div class="rec__name">Member Card</div></div>
+            <div class="rec__set">
+              <p><em>Move the member QR code to the Member section: </em>Place the QR code in a more intuitive and accessible location instead of requiring users to navigate through the Wallet.</p>
+              <p><em>Create a consistent QR card experience: </em>Standardize the visual design and context of the QR code across different parts of the app.</p>
+            </div>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><div class="rec__name">Search</div></div>
+            <div class="rec__set">
+              <p><em>Improve search flexibility: </em>Support partial matches and predictive suggestions to help users find products more efficiently.</p>
+              <p><em>Provide immediate feedback: </em>Use messages such as “No exact matches found” or “Did you mean…?” to guide users when search results are unclear.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 1 Summary -->
+    <div class="subhead"><span class="subhead__idx">06</span><h3>Phase 1 Summary</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">The first phase of the study identified Safeway's core usability challenges, including unclear feedback, inefficient task flows, and inconsistent interface patterns.</p>
+        <p class="prose">By combining interface evaluation, usability testing, and survey findings, we identified opportunities to improve clarity, efficiency, and user control across key shopping experiences. These insights informed the redesign in the next phase of the project.</p>
+      </div>
+    </section>
+
+    <!-- ============ PHASE 2 ============ -->
+    <div class="phase" id="phase-design">
+      <span class="phase__tag">Phase 02</span>
+      <h2>Redesign &amp; Validation</h2>
+    </div>
+
+    <!-- Redesign -->
+    <div class="subhead"><span class="subhead__idx">07</span><h3>Redesign</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">Guided by the recommendations, we redesigned the Safeway app's coupon, cart, member card, and search experiences into a high-fidelity prototype.</p>
+        <figure style="margin:0;">
+          <div class="shot figbox"><img src="images/safeway.jpg" style="height:auto;" alt="Redesigned Safeway app flows: coupon search, meal plans, and cart"></div>
+          <figcaption style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;line-height:1.4;">Redesigned flows — coupons, cart meal plans, and member card</figcaption>
+        </figure>
+        <div class="proto-links">
+          <a class="proto-link" href="https://www.figma.com/design/co7BtEhdrh9Q1YDUSq2YQo/Redesign-safeway-app?node-id=111-1699&t=twHE3HAuka4eQVgo-1" target="_blank" rel="noopener">View the Figma prototype <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation Usability Testing -->
+    <div class="subhead"><span class="subhead__idx">08</span><h3>Validation Usability Testing</h3></div>
+
+    <section class="sec">
+      <div class="sec__label">Overview</div>
+      <div class="sec__body">
+        <p class="prose">To evaluate whether the redesigned experience addressed the issues identified in Phase 1, we conducted a second round of usability testing using the redesigned prototype.</p>
+        <p class="prose">We followed the same overall testing procedure and usability metrics, with minor adjustments to the task scenarios to reflect the redesigned flows.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Participants</div>
+      <div class="sec__body">
+        <div class="participants">
+          <div><div class="participants__num">8</div><div class="participants__label">grocery app shoppers</div></div>
+          <p class="participants__desc">Eight participants tested the redesigned prototype, recruited from a similar mix of Safeway and comparable grocery app users across a range of shopping habits and frequencies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Tasks</div>
+      <div class="sec__body">
+        <div class="flows">
+          <div class="flow"><span class="flow__n">01</span><div><div class="flow__title">Clipping and applying coupons to eligible items</div><p class="flow__scenario">You downloaded the Safeway app to find good deals on groceries. Find any coupon you want to use and successfully apply it.</p></div></div>
+          <div class="flow"><span class="flow__n">02</span><div><div class="flow__title">Reviewing and adjusting the shopping cart</div><p class="flow__scenario">You’re shopping for groceries in the Safeway app. You need some à la carte items and want to try one of their meal plans from the meal hub. Add 1 à la carte item and 2 meal plans: a banana, the Almond-Crusted Turkey Patties with Garlic Green Beans, and the Cilantro Lime Chicken Thighs. Let me know when you have added them to your cart.</p></div></div>
+          <div class="flow"><span class="flow__n">03</span><div><div class="flow__title">Finding your member card</div><p class="flow__scenario">You went in person to do shopping at Safeway. You remembered you clipped a coupon and want to make sure you get your points and discounts. Find your member card.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Results</div>
+      <div class="sec__body">
+        <div class="tasks">
+          <div class="task">
+            <div class="task__title">Coupon Flow</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__before">89%</div><div class="metric__after">100%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__before">111s</div><div class="metric__after">15.2s</div><div class="metric__k">Avg. completion time</div></div>
+              <div class="metric"><div class="metric__before">19</div><div class="metric__after">4.2</div><div class="metric__k">Avg. clicks</div></div>
+              <div class="metric"><div class="metric__before">4.4</div><div class="metric__after">0.2</div><div class="metric__k">Avg. errors</div></div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="task__title">Shopping Cart</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__before">55%</div><div class="metric__after">100%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__before">150s</div><div class="metric__after">16.8s</div><div class="metric__k">Avg. completion time</div></div>
+              <div class="metric"><div class="metric__before">24.3</div><div class="metric__after">5.4</div><div class="metric__k">Avg. clicks</div></div>
+              <div class="metric"><div class="metric__before">10.7</div><div class="metric__after">2.4</div><div class="metric__k">Avg. errors</div></div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="task__title">Member Card</div>
+            <div class="task__metrics">
+              <div class="metric"><div class="metric__before">100%</div><div class="metric__after">100%</div><div class="metric__k">Task success</div></div>
+              <div class="metric"><div class="metric__before">33.4s</div><div class="metric__after">2.2s</div><div class="metric__k">Avg. completion time</div></div>
+              <div class="metric"><div class="metric__before">4.3</div><div class="metric__after">1</div><div class="metric__k">Avg. clicks</div></div>
+              <div class="metric"><div class="metric__before">2.2</div><div class="metric__after">0</div><div class="metric__k">Avg. errors</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 2 Summary -->
+    <div class="subhead"><span class="subhead__idx">09</span><h3>Phase 2 Summary</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">The validation study showed clear improvements across all three redesigned flows. Participants completed every task successfully with substantially less time, fewer interactions, and fewer errors.</p>
+        <p class="prose">The second round also revealed smaller usability issues around feedback, control visibility, and icon clarity, providing direction for further iteration.</p>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <div class="subhead"><span class="subhead__idx">10</span><h3>Conclusion</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">The study found that Safeway’s core usability challenges were driven by unclear feedback, inefficient task flows, and inconsistent interface patterns. By combining interface evaluation, usability testing, and survey findings, we identified opportunities to improve clarity, efficiency, and user control across key shopping experiences.</p>
+        <p class="prose">In future research, we would conduct a cognitive walkthrough to further examine the learnability of key tasks and strengthen our understanding of users’ decision-making processes.</p>
+      </div>
+    </section>
+
+    <!-- Key Takeaways -->
+    <div class="subhead"><span class="subhead__idx">11</span><h3>Key Takeaways</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <div class="process">
+          <div class="process__step"><span class="process__n">01</span><span class="process__phase">Usability testing reveals behaviors that evaluation alone may miss</span><span class="process__detail">Observing participants uncovered issues that were not identified during the heuristic evaluation, including hesitation, backtracking, and uncertainty during key tasks.</span></div>
+          <div class="process__step"><span class="process__n">02</span><span class="process__phase">Multiple research methods create a more complete picture</span><span class="process__detail">Usability testing revealed actual behavior, while surveys and questionnaires helped us better understand user motivations and broader patterns, such as the importance of coupons and savings.</span></div>
+          <div class="process__step"><span class="process__n">03</span><span class="process__phase">Small usability issues can accumulate into significant frustration</span><span class="process__detail">Unclear feedback, unnecessary navigation, and inefficient interactions may seem minor individually, but together they can reduce efficiency, confidence, and overall satisfaction.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References -->
+    <div class="subhead"><span class="subhead__idx">12</span><h3>References</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <div class="refs">
+          <p>Nielsen, J. (2024, January 30). 10 usability heuristics for user interface design. Nielsen Norman Group.</p>
+          <p>Moallem, A. (2025). Gestalt (p. 12). San Jose State University.</p>
+          <p>Moallem, A. (2025). Theories Model (p. 42). San Jose State University.</p>
+          <p>Moallem, A. (2025). Affordances (pp. 7–15). San Jose State University.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next project -->
+    <a class="cta-band" href="wearables.html">
+      <div>
+        <div class="eyebrow">Next Project — 01</div>
+        <div class="cta-band__title">Comparing Smart Ring and Glove Wearable Interfaces for Takeover Requests in Automated Driving</div>
+      </div>
+      <span class="cta-band__arrow">→</span>
+    </a>
+
+  </main>
+
+  <!-- Results cards: mark whether each new value went up or down vs the original -->
+  <script>
+    (function () {
+      document.querySelectorAll('.task__metrics .metric').forEach(function (m) {
+        var before = m.querySelector('.metric__before');
+        var after = m.querySelector('.metric__after');
+        if (!before || !after) return;                 // skip single-value metrics
+        var b = parseFloat(before.textContent.replace(/[^0-9.]/g, ''));
+        var a = parseFloat(after.textContent.replace(/[^0-9.]/g, ''));
+        if (isNaN(b) || isNaN(a) || a === b) return;    // no arrow when unchanged
+        var up = a > b;
+        var unit = after.textContent.replace(/[0-9.\s]/g, '');   // "%", "s", or ""
+        var delta = parseFloat(Math.abs(a - b).toFixed(1));      // magnitude of change
+        var t = document.createElement('span');
+        t.className = 'metric__trend';
+        t.textContent = (up ? '↑' : '↓') + ' ' + delta + unit;
+        t.setAttribute('aria-label', (up ? 'increased' : 'decreased') + ' by ' + delta + unit + ' from ' + before.textContent);
+        m.appendChild(t);
+      });
+    })();
+  </script>
+
+</body>
+</html>

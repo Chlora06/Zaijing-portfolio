@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Wearable Takeover-Request Interfaces in Automated Driving — Zaijing Liu</title>
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Zaijing Liu</span>
+        <span class="brand__sep">/</span>
+        <span class="brand__role">UX Research</span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home<span class="bar"></span></a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page">
+
+    <!-- Detail header -->
+    <section class="detail-header">
+      <a class="back" href="safeway.html"><span>←</span> Previous Project</a>
+      <div class="eyebrow">01 / Automated driving · Wearable devices · 2026</div>
+      <h1>Comparing Smart Ring and Glove Wearable Interfaces for Takeover Requests in Automated Driving</h1>
+      <p class="tagline">A driving simulator experiment comparing ring, glove, and seat-back vibrotactile takeover-request interfaces, and the information types and request structures delivered through them.</p>
+      <div class="facts">
+        <div><div class="k">Role</div><div class="v">UX Researcher</div></div>
+        <div><div class="k">Timeline</div><div class="v">Oct 2025 – Jun 2026</div></div>
+        <div><div class="k">Domain</div><div class="v">Automated driving · Wearable devices</div></div>
+      </div>
+    </section>
+
+    <!-- Cover -->
+    <div class="shot cover"><img src="images/lab.jpg" alt="Driving simulator setup with three-screen highway scene and steering wheel"></div>
+
+    <!-- Overview -->
+    <div class="subhead"><span class="subhead__idx">01</span><h3>Overview</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">This project investigated how wearable vibrotactile takeover-request interfaces could support driver takeover performance in SAE Level 3 automated driving. We compared ring-, glove-, and seat-back vibration interfaces while also examining different information types and takeover-request structures in a driving simulator study.</p>
+      </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <div class="subhead"><span class="subhead__idx">02</span><h3>Problem Statement</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">Level 3 automated driving requires drivers to quickly transition from non-driving activities back to manual control when a takeover request occurs. However, existing tactile warning interfaces can be sensitive to posture and device placement.</p>
+        <p class="prose">This study explored whether wearable vibrotactile devices, including rings and gloves, could provide a more effective way to support driver takeover.</p>
+      </div>
+    </section>
+
+    <!-- Research Focus -->
+    <div class="subhead"><span class="subhead__idx">03</span><h3>Research Focus</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose">The goal of the present study was to investigate the effects of device type, TOR structure, and information type on drivers' takeover performance in time-critical automated driving situations.</p>
+        <div class="goals">
+          <div class="goals__row"><span class="goals__name">Wearable Device Type</span><span class="goals__text">How do ring-, glove-, and seat-back vibrotactile interfaces differ in supporting driver takeover?</span></div>
+          <div class="goals__row"><span class="goals__name">TOR Structure</span><span class="goals__text">Does a two-step takeover request with an auditory pre-warning support better takeover performance than a one-step request?</span></div>
+          <div class="goals__row"><span class="goals__name">Information Type</span><span class="goals__text">How do instructional and informative vibrotactile cues affect driver response during takeover?</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Method -->
+    <div class="subhead"><span class="subhead__idx">04</span><h3>Method</h3></div>
+
+    <section class="sec">
+      <div class="sec__label">Experimental Design</div>
+      <div class="sec__body">
+        <p class="prose">The experiment used a 5 × 2 × 2 full factorial design to examine how wearable device type, takeover-request structure, and information type influenced takeover performance.</p>
+        <div class="goals">
+          <div class="goals__row"><span class="goals__name">Wearable Device Type (5)</span><span class="goals__text">One ring · two-ring · one glove · two-glove · seat-back (baseline)</span></div>
+          <div class="goals__row"><span class="goals__name">TOR Structure (2)</span><span class="goals__text"><span style="display:block;"><em style="font-weight:600;font-style:normal;color:var(--ink);">One-step TOR</em> — vibrotactile cue 4 s before a potential collision</span><span style="display:block;margin-top:8px;"><em style="font-weight:600;font-style:normal;color:var(--ink);">Two-step TOR</em> — 1 s auditory pre-warning, then the vibrotactile cue within the same 4 s budget</span></span></div>
+          <div class="goals__row"><span class="goals__name">Information Type (2)</span><span class="goals__text"><span style="display:block;"><em style="font-weight:600;font-style:normal;color:var(--ink);">Instructional</em> — tells the driver which action to take</span><span style="display:block;margin-top:8px;"><em style="font-weight:600;font-style:normal;color:var(--ink);">Informative</em> — describes the hazard, leaving the driver to select the maneuver</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Participants</div>
+      <div class="sec__body">
+        <div class="participants">
+          <div><div class="participants__num">40</div><div class="participants__label">licensed drivers</div></div>
+          <p class="participants__desc">Forty licensed drivers (24 female, 16 male) were recruited from the SJSU SONA participant pool. Participants ranged from 18 to 64 years old (M = 24.57) and drove an average of 3.98 days per week.</p>
+        </div>
+        <div class="statbar">
+          <div class="statbar__cell"><div class="statbar__v">24 / 16</div><div class="statbar__k">Female / male</div></div>
+          <div class="statbar__cell"><div class="statbar__v">24.57</div><div class="statbar__k">Average age (18–64)</div></div>
+          <div class="statbar__cell"><div class="statbar__v">3.98</div><div class="statbar__k">Driving days per week</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Simulator &amp; Apparatus</div>
+      <div class="sec__body">
+        <p class="prose">Participants completed the study in a driving simulator using an SAE Level 3 automated driving scenario. The automated vehicle traveled in the middle lane of a three-lane highway while participants watched YouTube videos as a non-driving-related task. Vibrotactile takeover cues were delivered through five interface configurations: one ring, two rings, one glove, two gloves, and a seat-back vibration baseline.</p>
+        <div class="gallery gallery--media">
+          <figure><div class="shot figbox" style="aspect-ratio:3/2;"><img src="images/lab.jpg" alt="Driving simulator with steering wheel and wearable takeover devices"></div><figcaption>Simulator setup and wearable devices</figcaption></figure>
+        </div>
+        <figure style="margin:24px 0 0;">
+          <div class="shot figbox"><img src="images/devices.png" style="height:auto;" alt="The five vibrotactile configurations: one ring, two rings, one glove, two gloves, and a seat-back baseline"></div>
+          <figcaption style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;line-height:1.4;">The five vibrotactile configurations — one ring, two rings, one glove, two gloves, and seat-back baseline</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Scenario</div>
+      <div class="sec__body">
+        <p class="prose">Participants traveled in the middle lane of a three-lane highway under automated driving while watching YouTube videos as a non-driving-related task. When an obstacle appeared ahead, a takeover request prompted the driver to resume manual control and move into the open adjacent lane.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Procedure</div>
+      <div class="sec__body">
+        <div class="process">
+          <div class="process__step"><span class="process__n">01</span><span class="process__phase">Consent &amp; Demographics</span><span class="process__detail">Participants reviewed the consent form and completed a short demographic questionnaire.</span></div>
+          <div class="process__step"><span class="process__n">02</span><span class="process__phase">Training</span><span class="process__detail">Participants completed approximately 15 minutes of training to become familiar with the simulator, takeover task, and wearable devices.</span></div>
+          <div class="process__step"><span class="process__n">03</span><span class="process__phase">Experimental Sessions</span><span class="process__detail">Participants completed 10 driving sessions covering five device conditions and two TOR structures.</span></div>
+          <div class="process__step"><span class="process__n">04</span><span class="process__phase">Automated Driving &amp; NDRT</span><span class="process__detail">During automated driving, participants watched YouTube videos as a non-driving-related task and responded to takeover requests when they occurred.</span></div>
+          <div class="process__step"><span class="process__n">05</span><span class="process__phase">Post-Session Questionnaires</span><span class="process__detail">After each session, participants completed subjective questionnaires assessing workload and device preference.</span></div>
+          <div class="process__step"><span class="process__n">06</span><span class="process__phase">Post-Experiment Questionnaire</span><span class="process__detail">After completing all sessions, participants provided feedback on their overall experience and device preferences.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec__label">Measures</div>
+      <div class="sec__body">
+        <p class="prose">We evaluated takeover performance and participants' subjective experience using both objective and subjective measures.</p>
+        <div class="eyebrow" style="margin-top:38px;">Metrics</div>
+        <div class="meth__grid">
+          <div class="meth__col meth__col--q1">
+            <h4>Objective Measures</h4>
+            <div class="set">
+              <p><em>Takeover Time:</em> Time required to respond to the takeover request. Shorter times indicate faster responses.</p>
+              <p><em>Information Processing Time:</em> Time required to process the takeover information and select an action. Shorter times indicate faster information processing.</p>
+              <p><em>Maximum Resulting Acceleration:</em> Maximum acceleration during the takeover maneuver. Lower values indicate smoother vehicle control.</p>
+            </div>
+          </div>
+          <div class="meth__col meth__col--q2">
+            <h4>Subjective Measures</h4>
+            <div class="set">
+              <p><em>Workload:</em> Participants’ perceived workload during each condition. Higher scores indicate greater workload.</p>
+              <p><em>Acceptance:</em> Participants’ perceived usefulness and satisfaction with the interface. Higher scores indicate greater acceptance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results & Discussion -->
+    <div class="subhead"><span class="subhead__idx">05</span><h3>Results &amp; Discussion</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <p class="prose prose--lead">Two-step takeover requests sped up responses but introduced trade-offs, while device configuration and information type shaped how useful the interface felt more than objective performance.</p>
+        <div class="recs">
+          <div class="rec">
+            <div class="rec__head"><span class="rec__n">01</span><div class="rec__name">TOR Structure</div></div>
+            <div class="finding-grid">
+              <div class="finding-col">
+                <div class="finding-col__label">Findings</div>
+                <ul class="blist">
+                  <li>Two-step TOR led to shorter takeover time and information-processing time.</li>
+                  <li>But it also led to higher maximum resulting acceleration.</li>
+                  <li>Two-step TOR received lower usefulness ratings.</li>
+                  <li>Its workload effect depended on information type.</li>
+                </ul>
+              </div>
+              <div class="finding-col">
+                <div class="finding-col__label">Discussion</div>
+                <ul class="blist">
+                  <li>Two-step TORs led to faster responses after the tactile cue.</li>
+                  <li>The pre-warning may have helped drivers reorient earlier.</li>
+                  <li>However, faster responses did not improve overall takeover quality.</li>
+                  <li>Two-step TORs also showed a subjective trade-off, with lower usefulness and higher workload in the instructional condition.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><span class="rec__n">02</span><div class="rec__name">Device Configuration</div></div>
+            <div class="finding-grid">
+              <div class="finding-col">
+                <div class="finding-col__label">Findings</div>
+                <ul class="blist">
+                  <li>Device configuration did not affect objective performance.</li>
+                  <li>Usefulness: two-glove &gt; two-ring.</li>
+                  <li>Satisfaction: two-glove &gt; one-glove.</li>
+                </ul>
+              </div>
+              <div class="finding-col">
+                <div class="finding-col__label">Discussion</div>
+                <ul class="blist">
+                  <li>All devices provided clear directional information after training.</li>
+                  <li>Two-glove and two-ring showed higher usefulness ratings, which may reflect better spatial mapping of the tactile cues.</li>
+                  <li>Glove devices may also have been more comfortable because the tactors fit better on the back of the hand.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rec">
+            <div class="rec__head"><span class="rec__n">03</span><div class="rec__name">Information Type</div></div>
+            <div class="finding-grid">
+              <div class="finding-col">
+                <div class="finding-col__label">Findings</div>
+                <ul class="blist">
+                  <li>Information type did not affect objective performance.</li>
+                  <li>Informative cues received higher usefulness ratings than instructional cues.</li>
+                </ul>
+              </div>
+              <div class="finding-col">
+                <div class="finding-col__label">Discussion</div>
+                <ul class="blist">
+                  <li>Both cue types supported similar objective performance after training.</li>
+                  <li>Informative cues received higher usefulness ratings, perhaps because they provided more context about the driving environment.</li>
+                  <li>In the instructional condition, the pre-warning may have felt redundant and increased workload.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limitations -->
+    <div class="subhead"><span class="subhead__idx">06</span><h3>Limitations</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <div class="goals">
+          <div class="goals__row"><span class="goals__name">Scenario limitation</span><span class="goals__text">The study used one trained lane-change scenario with a fixed 4-s lead time, so the results may not generalize to other urgency levels or more complex driving situations.</span></div>
+          <div class="goals__row"><span class="goals__name">Participant limitation</span><span class="goals__text">Participants were recruited from one institution and were relatively young, which may limit generalizability to older drivers and broader populations.</span></div>
+          <div class="goals__row"><span class="goals__name">Device limitation</span><span class="goals__text">The C2 tactors were relatively large compared with commercial finger-worn devices, which may have affected comfort and tactile perception.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References -->
+    <div class="subhead"><span class="subhead__idx">07</span><h3>References</h3></div>
+    <section class="sec">
+      <div class="sec__label"></div>
+      <div class="sec__body">
+        <div class="refs">
+          <p>Brandenburg, S., &amp; Roche, F. (2020). Behavioral changes to repeated takeovers in automated driving: The drivers’ ability to transfer knowledge and the effects of takeover request process. Transportation Research Part F: Traffic Psychology and Behaviour, 73, 15–28. https://doi.org/10.1016/j.trf.2020.06.002</p>
+          <p>On-Road Automated Driving (ORAD) Committee. (2021). Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles. SAE International. https://doi.org/10.4271/J3016_202104</p>
+          <p>Huang, G., &amp; Pitts, B. J. (2022a). Takeover requests for automated driving: The effects of signal direction, lead time, and modality on takeover performance. Accident Analysis &amp; Prevention, 165, 106534. https://doi.org/10.1016/j.aap.2021.106534</p>
+          <p>Petermeijer, S., Doubek, F., &amp; De Winter, J. (2017). Driver response times to auditory, visual, and tactile take-over requests: A simulator study with 101 participants. 2017 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 1505–1510. https://doi.org/10.1109/SMC.2017.8122827</p>
+          <p>Green, M. (2000). “How Long Does It Take to Stop?” Methodological Analysis of Driver Perception-Brake Times. Transportation Human Factors, 2(3), 195–216. https://doi.org/10.1207/STHF0203_1</p>
+          <p>Lindemann, P., Müller, N., &amp; Rigolll, G. (2019). Exploring the Use of Augmented Reality Interfaces for Driver Assistance in Short-Notice Takeovers. 2019 IEEE Intelligent Vehicles Symposium (IV), 804–809. https://doi.org/10.1109/IVS.2019.8814237</p>
+          <p>Walch, M., Lange, K., Baumann, M., &amp; Weber, M. (2015). Autonomous driving: Investigating the feasibility of car-driver handover assistance. Proceedings of the 7th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, 11–18. https://doi.org/10.1145/2799250.2799268</p>
+          <p>Politis, I., Brewster, S., &amp; Pollick, F. (2017). Using Multimodal Displays to Signify Critical Handovers of Control to Distracted Autonomous Car Drivers. International Journal of Mobile Human Computer Interaction, 9(3), 1–16. https://doi.org/10.4018/ijmhci.2017070101</p>
+          <p>Lo, W.-H., &amp; Huang, G. (2025). Directional vibrotactile takeover requests on a wrist-worn device: Effects of age, pattern type, and urgency in automated driving. Accident Analysis &amp; Prevention, 220, 108093. https://doi.org/10.1016/j.aap.2025.108093</p>
+          <p>Meng, F., &amp; Spence, C. (2015). Tactile warning signals for in-vehicle systems. Accident Analysis &amp; Prevention, 75, 333–346. https://doi.org/10.1016/j.aap.2014.12.013</p>
+          <p>Pescara, E., Stubenbord, A., Röddiger, T., Fang, L., &amp; Beigl, M. (2021). Where Should I Look? Comparing Reference Frames for Spatial Tactile Cues. 2021 International Symposium on Wearable Computers, 68–72. https://doi.org/10.1145/3460421.3478822</p>
+          <p>Jumet, B., Zook, Z. A., Yousaf, A., Rajappan, A., Xu, D., Yap, T. F., Fino, N., Liu, Z., O’Malley, M. K., &amp; Preston, D. J. (2023). Fluidically programmed wearable haptic textiles. Device, 1(3). https://doi.org/10.1016/j.device.2023.100059</p>
+          <p>Martinez, K. D., &amp; Huang, G. (2022). In-Vehicle Human Machine Interface: Investigating the Effects of Tactile Displays on Information Presentation in Automated Vehicles. IEEE Access, 10, 94668–94676. https://doi.org/10.1109/ACCESS.2022.3205022</p>
+          <p>Zhang, W., Zeng, Y., Yang, Z., Kang, C., Wu, C., Shi, J., Ma, S., &amp; Li, H. (2021). Optimal Time Intervals in Two-Stage Takeover Warning Systems With Insight Into the Drivers’ Neuroticism Personality. Frontiers in Psychology, 12, 601536. https://doi.org/10.3389/fpsyg.2021.601536</p>
+          <p>Ma, S., Zhang, W., Yang, Z., Kang, C., Wu, C., Chai, C., Shi, J., Zeng, Y., &amp; Li, H. (2021). Take over Gradually in Conditional Automated Driving: The Effect of Two-stage Warning Systems on Situation Awareness, Driving Stress, Takeover Performance, and Acceptance. International Journal of Human–Computer Interaction, 37(4), 352–362. https://doi.org/10.1080/10447318.2020.1860514</p>
+          <p>Eriksson, A., &amp; Stanton, N. A. (2017). Takeover Time in Highly Automated Vehicles: Noncritical Transitions to and From Manual Control. Human Factors: The Journal of the Human Factors and Ergonomics Society, 59(4), 689–705. https://doi.org/10.1177/0018720816685832</p>
+          <p>Cohen-Lazry, G., Katzman, N., Borowsky, A., &amp; Oron-Gilad, T. (2019). Directional tactile alerts for take-over requests in highly-automated driving. Transportation Research Part F: Traffic Psychology and Behaviour, 65, 217–226. https://doi.org/10.1016/j.trf.2019.07.025</p>
+          <p>Proctor, R. W., &amp; Vu, K.-P. L. (2006). Stimulus-Response Compatibility Principles: Data, Theory, and Application (0 ed.). CRC Press. https://doi.org/10.1201/9780203022795</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next project -->
+    <a class="cta-band" href="meetup.html">
+      <div>
+        <div class="eyebrow">Next Project — 02</div>
+        <div class="cta-band__title">Usability Testing for the Meetup Website</div>
+      </div>
+      <span class="cta-band__arrow">→</span>
+    </a>
+
+  </main>
+
+</body>
+</html>
