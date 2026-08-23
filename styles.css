@@ -24,6 +24,7 @@
   --prio-1: #b3261e;
   --prio-2: #c2620d;
   --prio-3: #2a5aa8;
+  --link:   #0a66c2;   /* clickable links (email, LinkedIn) */
 
   --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono: 'IBM Plex Mono', monospace;
@@ -220,6 +221,7 @@ a { color: inherit; }
 .meta__row .k { color: var(--faint); }
 .meta__row a { text-decoration: none; }
 .meta__row a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.meta__row a[href*="linkedin"] { color: var(--link); }   /* only LinkedIn is blue */
 
 /* work / project index */
 .work { padding: 24px 0 0; }
