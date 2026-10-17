@@ -331,6 +331,32 @@ a { color: inherit; }
 .resume-head h1 { font-size: clamp(40px, 5vw, 64px); line-height: 1.0; letter-spacing: -0.03em; font-weight: 600; margin: 22px 0 0; }
 .resume-head p { font-size: 18px; line-height: 1.6; margin-top: 20px; max-width: 46ch; color: var(--ink-3); }
 
+/* version tabs */
+.resume-tabs {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.resume-tab {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 12px 14px;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.resume-tab:hover { color: var(--ink); }
+.resume-tab.is-active { color: var(--ink); border-bottom-color: var(--ink); }
+
 .resume-sheet { max-width: 900px; margin: 0 auto 96px; border: 1px solid var(--line); background: var(--paper); }
 /* height tracks the page shape (8.5 x 13 in) at every width — no empty grey below */
 .resume-sheet iframe { display: block; width: 100%; aspect-ratio: 612 / 936; height: auto; border: none; }

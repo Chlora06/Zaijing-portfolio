@@ -33,22 +33,57 @@
       <div>
         <div class="eyebrow">Resume</div>
         <h1>My Resume</h1>
-        <p>A one-page overview of my experience, research methods, skills, and education.</p>
+        <p>A one-page overview of my experience, research methods, skills, and education. Switch between the versions tailored to each role.</p>
       </div>
-      <a class="btn btn--lg" href="Zaijing-Liu-Resume.pdf" download="Zaijing-Liu-Resume.pdf">
+      <a class="btn btn--lg" id="resume-download" href="Researcher-Zaijing Liu Resume.pdf" download>
         <span>↓</span> Download PDF
       </a>
     </section>
 
+    <!-- Tabs -->
+    <div class="resume-tabs no-print" role="tablist" aria-label="Resume versions">
+      <button class="resume-tab is-active" type="button" role="tab" aria-selected="true"
+              data-pdf="Researcher-Zaijing Liu Resume.pdf">Researcher</button>
+      <button class="resume-tab" type="button" role="tab" aria-selected="false"
+              data-pdf="Human Factor Engineer-Zaijing Liu Resume.pdf">Human Factors Engineer</button>
+    </div>
+
     <!-- Live PDF preview -->
     <div class="resume-sheet">
-      <iframe src="Zaijing-Liu-Resume.pdf#view=FitH&toolbar=0&navpanes=0" title="Zaijing Liu resume"></iframe>
+      <iframe id="resume-frame" src="Researcher-Zaijing Liu Resume.pdf#view=FitH&toolbar=0&navpanes=0" title="Zaijing Liu resume"></iframe>
       <div class="resume-sheet__foot no-print">
-        <a href="Zaijing-Liu-Resume.pdf" download="Zaijing-Liu-Resume.pdf">Download the PDF →</a>
+        <a id="resume-foot" href="Researcher-Zaijing Liu Resume.pdf" download>Download the PDF →</a>
       </div>
     </div>
 
   </main>
+
+  <script>
+    (function () {
+      var tabs  = document.querySelectorAll('.resume-tab');
+      var frame = document.getElementById('resume-frame');
+      var dl    = document.getElementById('resume-download');
+      var foot  = document.getElementById('resume-foot');
+
+      function select(tab) {
+        var pdf = tab.getAttribute('data-pdf');
+        var href = encodeURI(pdf);
+        frame.src = href + '#view=FitH&toolbar=0&navpanes=0';
+        dl.href = href;
+        foot.href = href;
+
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+      }
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () { select(tab); });
+      });
+    })();
+  </script>
 
 </body>
 </html>
